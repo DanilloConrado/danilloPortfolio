@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danillo Conrado | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">&gt;danilloConrado/&lt;</a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <p class="greeting">Olá, eu sou</p>
+            <h1>danillo<span>Conrado</span></h1>
+            <h2>Software Development<span class="cursor">|</span>FullStack </h2>
+            <p class="description">
+                Fullstack Developer Jr. | Cada linha de código é uma oportunidade de aprender e entregar valor. Buscando
+                desafios que me façam crescer como desenvolvedor e como profissional.
+            </p>
+            <footer>
+                <a href="https://github.com/DanilloConrado" target="_blank"><i class="fa-brands fa-github"></i>
+                    GitHub</a>
+                <a href="https://www.linkedin.com/in/danilloconrado/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i>
+                    Linkedin</a>
+                <a href="https://www.instagram.com/danilloconrado/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="mailto:danilobarbosa.seg@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+            </footer>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos &rarr;</a>
+                <a href="#" id="openModalBtn" class="btn btn-outline">Fale Comigo</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/ChatGPT Image 14 de dez. de 2025, 02_55_23.png" alt="Foto de Danillo Conrado">
+        </div>
+    </main>
+
+    <section id="sobre" class="about-section">
+        <h1>Sobre Mim</h1>
+        <div class="about-content">
+            <p>
+                Desenvolvedor Full Stack com foco em React, Node.js, JavaScript, HTML e CSS. Desenvolvo
+                aplicações web com interfaces responsivas, integração a APIs e foco em organização e qualidade de
+                código.
+                Atualmente no 6º período de Engenharia de Software, com projetos próprios que refletem meu aprendizado
+                contínuo e interesse genuíno pela área.
+                Inglês intermediário.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects-section">
+        <h1>Meus Projetos</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/img-projeto1.png" alt="Projeto 1" class="project-img">
+                <div class="project-info">
+                    <h3>Gestão de Barbearia</h3>
+                    <p>Painel administrativo fullstack para barbearia com cadastro de proprietários, gestão de clientes
+                        e controle de estoque em tempo real.</p>
+                    <a href="https://fullstack-gestao-de-barbearia-front.vercel.app" target="_blank"
+                        class="btn btn-outline btn-sm">Ver Mais</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/img-projeto2.png" alt="Projeto 2" class="project-img">
+                <div class="project-info">
+                    <h3>Clima Agora</h3>
+                    <p>O projeto Clima Agora é uma aplicação web responsiva e moderna que permite aos usuários consultar
+                        informações climáticas em tempo real de qualquer localidade do mundo.</p>
+                    <a href="https://danilloconrado.github.io/Climate_Project/" target="_blank"
+                        class="btn btn-outline btn-sm">Ver Mais</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/img-projeto3.png" alt="Projeto 3" class="project-img">
+                <div class="project-info">
+                    <h3>Dashboard</h3>
+                    <p>Painel administrativo para controle e agendamento e gerenciamento de empresas.</p>
+                    <a href="https://dashboard-react-tau-ten.vercel.app/" target="_blank"
+                        class="btn btn-outline btn-sm">Ver Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatos" class="site-footer">
+        <div class="footer-content">
+            <h2>Vamos trabalhar juntos?</h2>
+            <p>Estou sempre aberto a novas oportunidades e projetos interessantes.</p>
+            <div class="contact-links">
+                <a href="mailto:danilobarbosa.seg@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                <a href="https://github.com/DanilloConrado" target="_blank"><i class="fa-brands fa-github"></i>
+                    GitHub</a>
+                <a href="https://www.linkedin.com/in/danilloconrado/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i>
+                    LinkedIn</a>
+                <a href="https://www.instagram.com/danilloconrado/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Danillo Conrado.</p>
+        </div>
+    </footer>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <p style="margin-top: 1rem; margin-bottom: 0;">Telefone para contato:</p>
+            <p class="phone-number">(83) 98911-2170</p>
+            <a href="https://wa.me/5583989112170" target="_blank" class="btn btn-primary"
+                style="margin-top: 1rem; gap: 0.5rem;">
+                <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" title="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
