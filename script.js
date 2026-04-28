@@ -1,3 +1,8 @@
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 document.addEventListener("DOMContentLoaded", () => {
     const backToTopBtn = document.getElementById("backToTop");
 
@@ -17,19 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const modal = document.getElementById("contactModal");
-    const btnModal = document.getElementById("openModalBtn");
+    const btnModals = document.querySelectorAll(".open-modal-btn");
     const spanClose = document.getElementsByClassName("close-modal")[0];
 
-    btnModal.onclick = function(e) {
-        e.preventDefault();
-        modal.style.display = "flex";
-    };
+    btnModals.forEach(btn => {
+        btn.onclick = function (e) {
+            e.preventDefault();
+            modal.style.display = "flex";
+        };
+    });
 
-    spanClose.onclick = function() {
+    spanClose.onclick = function () {
         modal.style.display = "none";
     };
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }

@@ -61,10 +61,10 @@ nav {
 .logo {
     font-size: 20px;
     font-weight: bold;
-    flex: 1;
-    max-width: 650px;
     text-decoration: none;
     color: var(--color-text-main);
+    text-align: right;
+    width: 83%;
 }
 
 .nav-links {
@@ -88,6 +88,18 @@ nav {
 }
 
 .nav-links a:hover {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.nav-links a.nav-contact-btn {
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.nav-links a.nav-contact-btn:hover {
+    background-color: rgba(0, 250, 154, 0.1);
     color: var(--color-primary);
     border-color: var(--color-primary);
 }
@@ -333,16 +345,12 @@ nav {
     text-align: center;
 }
 
-.site-footer .footer-content h2 {
-    color: var(--color-primary);
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
+
 
 .site-footer .footer-content p {
     color: var(--color-text-muted);
     font-size: 1.1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact-links {
@@ -369,7 +377,7 @@ nav {
 }
 
 .contact-links i {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .footer-bottom {
