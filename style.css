@@ -338,6 +338,72 @@ nav {
     flex: 1;
 }
 
+/* --- SKILLS SECTION --- */
+.skills-section {
+    padding: 2rem 5% 4rem;
+    /* Reduzindo o padding, especialmente no topo já que removemos o h1 */
+    background-color: transparent;
+    color: var(--color-text-main);
+    text-align: center;
+}
+
+.skills-section h1 {
+    color: var(--color-primary);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    /* Reduzido de 4rem para 2.5rem */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    /* Reduzido de 1.2rem para 0.8rem */
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.skill-item:hover {
+    transform: translateY(-8px);
+    /* Reduzido de -10px para -8px */
+}
+
+.skill-item i {
+    font-size: 3.5rem;
+    /* Reduzido de 5rem para 3.5rem */
+    transition: filter 0.3s ease, transform 0.3s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.skill-item:hover i {
+    transform: scale(1.1);
+    filter: drop-shadow(0 8px 12px rgba(0, 250, 154, 0.4));
+}
+
+.skill-item span {
+    font-size: 1rem;
+    /* Reduzido de 1.2rem para 1rem */
+    font-weight: bold;
+    color: var(--color-text-dim);
+    transition: color 0.3s ease;
+}
+
+.skill-item:hover span {
+    color: var(--color-text-main);
+}
+
+/* ---------------------- */
+
 .site-footer {
     background-color: var(--color-bg-footer);
     color: var(--color-text-main);

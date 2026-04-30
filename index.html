@@ -7,6 +7,7 @@
     <title>Danillo Conrado | Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -23,9 +24,45 @@
                 interesse genuíno pela área. Inglês intermediário.
             </p>
 
-            <div class="hero-buttons">
-                <a href="#contatos" class="btn btn-outline">Contatos </a>
-                <a href="#projetos" class="btn btn-primary">Ver Projetos &rarr;</a>
+            <div style="display: inline-flex; flex-direction: column; align-items: center;">
+                <div class="hero-buttons" style="margin-bottom: 2rem;">
+                    <a href="#" class="btn btn-primary open-modal-btn">Fale Comigo</a>
+                    <a href="#projetos" class="btn btn-outline">Ver Projetos &rarr;</a>
+                </div>
+
+                <footer style="margin-bottom: 0;">
+                    <a href="https://github.com/DanilloConrado" target="_blank" title="GitHub">
+                        <i class="fa-brands fa-github" style="font-size: 1.5rem;"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/danilloconrado/" target="_blank" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin" style="font-size: 1.5rem;"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/danilloconrado/" target="_blank" title="Instagram">
+                        <i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i> Instagram
+                    </a>
+                </footer>
+            </div>
+
+            <div id="contactModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2 style="margin-bottom: 1rem;">Meus Contatos</h2>
+                    <p style="margin-top: 1rem; margin-bottom: 0;">WhatsApp:</p>
+                    <p class="phone-number" style="font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 1rem;">(83)
+                        98911-2170</p>
+                    <a href="https://wa.me/5583989112170" target="_blank" class="btn btn-primary"
+                        style="gap: 0.5rem; width: 100%; justify-content: center;">
+                        <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
+                    </a>
+        
+                    <p style="margin-top: 2rem; margin-bottom: 0;">E-mail:</p>
+                    <p class="phone-number" style="font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 1rem;">
+                        danilobarbosa.seg@gmail.com</p>
+                    <a href="mailto:danilobarbosa.seg@gmail.com" class="btn btn-outline"
+                        style="gap: 0.5rem; width: 100%; justify-content: center;">
+                        <i class="fa-solid fa-envelope"></i> Enviar E-mail
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -69,46 +106,42 @@
         </div>
     </section>
 
-    <footer id="contatos" class="site-footer">
-        <div class="footer-content">
-            <div style="margin-bottom: 3rem; display: flex; justify-content: center;">
-                <a href="#" class="btn btn-primary open-modal-btn">Fale Comigo</a>
+    <section id="tecnologias" class="skills-section">
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
             </div>
-            <div class="contact-links">
-                <a href="https://github.com/DanilloConrado" target="_blank" title="GitHub"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/danilloconrado/" target="_blank" title="LinkedIn"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/danilloconrado/" target="_blank" title="Instagram"><i
-                        class="fa-brands fa-instagram"></i></a>
+            <div class="skill-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-mongodb-plain colored"></i>
+                <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
+            </div>
+            <div class="skill-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
             </div>
         </div>
-        <div class="footer-bottom">
+    </section>
+
+    <footer id="contatos" class="site-footer" style="padding: 2rem 5%;">
+        <div class="footer-bottom" style="border-top: none; padding-top: 0; margin-bottom: 0;">
             <p>&copy; 2026 Danillo Conrado.</p>
         </div>
     </footer>
 
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2 style="margin-bottom: 1rem;">Meus Contatos</h2>
-            <p style="margin-top: 1rem; margin-bottom: 0;">WhatsApp:</p>
-            <p class="phone-number" style="font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 1rem;">(83)
-                98911-2170</p>
-            <a href="https://wa.me/5583989112170" target="_blank" class="btn btn-primary"
-                style="gap: 0.5rem; width: 100%; justify-content: center;">
-                <i class="fa-brands fa-whatsapp"></i> Abrir WhatsApp
-            </a>
 
-            <p style="margin-top: 2rem; margin-bottom: 0;">E-mail:</p>
-            <p class="phone-number" style="font-size: 1.1rem; color: var(--color-text-main); margin-bottom: 1rem;">
-                danilobarbosa.seg@gmail.com</p>
-            <a href="mailto:danilobarbosa.seg@gmail.com" class="btn btn-outline"
-                style="gap: 0.5rem; width: 100%; justify-content: center;">
-                <i class="fa-solid fa-envelope"></i> Enviar E-mail
-            </a>
-        </div>
-    </div>
 
     <button id="backToTop" class="back-to-top" title="Voltar ao topo">
         <i class="fa-solid fa-arrow-up"></i>
