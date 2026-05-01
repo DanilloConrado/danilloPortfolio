@@ -393,6 +393,7 @@ nav {
 
 .skill-item:hover span {
     color: var(--color-text-main);
+}
 
 .site-footer {
     background-color: var(--color-bg-footer);
